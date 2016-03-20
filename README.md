@@ -114,7 +114,7 @@ PALADIN_USER_EMAIL_REGEX="@my\.app\.com$" mix phoenix_server
 
 Paladin also requires some environment variables to use:
 
-* `PORT` - The endpoint port
+* `HOST` - The endpoint host
 * `SECRET_KEY_BASE` - The phoenix endpoint secret key
 * `DATABASE_URL` - The db url for the Paladin.Repo
 * `GUARDIAN_SECRET_KEY_BASE` - The Guardian secret for signing Paladins JWTs for
