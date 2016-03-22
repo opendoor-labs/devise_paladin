@@ -22,7 +22,7 @@ customize to your requirements.
 ```sh
 git clone https://github.com/opendoor-labs/devise_paladin
 cd devise_paladin
-git pull --recurse-submodules
+git submodule update --recursive apps/paladin
 mix deps.get
 mix ecto.migrate -r Paladin.Repo
 cd apps/paladin
