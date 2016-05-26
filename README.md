@@ -22,8 +22,9 @@ customize to your requirements.
 ```sh
 git clone https://github.com/opendoor-labs/devise_paladin
 cd devise_paladin
-git submodule update --recursive apps/paladin
+git submodule update --init
 mix deps.get
+mix ecto.create -r Paladin.Repo
 mix ecto.migrate -r Paladin.Repo
 cd apps/paladin
 npm install
